@@ -77,7 +77,7 @@ const Shop = () => {
 
       <img src="/images/wave.png" alt="Decorative wave" className="w-full mt-[-90px] relative z-10" />
 
-      <div className="text-center p-4 md:p-8 font-sans">
+      <div className="text-center p-4 md:p-8 font-sans max-sm:mt-12">
      
         <div className="flex flex-wrap justify-center items-center max-w-6xl mx-auto mt-8 gap-4">
           <div className="flex items-center space-x-2">
