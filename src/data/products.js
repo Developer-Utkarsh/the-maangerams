@@ -100,7 +100,7 @@ export const products = [
     oldPrice: 50,
     quantity: "500 grams",
     description: "Farm-fresh tomatoes bursting with natural flavor and goodness.",
-    imageSrc: "/images/tomato.png",
+    imageSrc: "/images/tomato.jpeg",
     otherImages: [
       "/images/deal.png",
     ],
@@ -118,7 +118,7 @@ export const products = [
     oldPrice: 0,
     quantity: "500 grams",
     description: "Pure onions with rich, robust flavor straight from our farm.",
-    imageSrc: "/images/onions.png",
+    imageSrc: "/images/onions.jpeg",
     otherImages: [
       "/images/onion.png",
     ],

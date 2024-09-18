@@ -15,7 +15,7 @@ const ProductCard = ({ product }) => {
         `}
       </style>
       <Link to={`/product/${product.id}`} state={{ product }} className="product-card">
-        <div className="flex items-center bg-white border border-zinc-300 p-4 rounded-lg shadow-sm flex-col">
+        <div className="flex hover:shadow-md  hover:border-zinc-400 transition duration-300  items-center bg-white border border-zinc-300 p-4 rounded-lg shadow-sm flex-col">
           <div className='w-full flex'>
             <img src={product.imageSrc} alt={product.name} className="w-28 h-28 object-center mr-4 rounded-md" />
             <div className="flex-grow">

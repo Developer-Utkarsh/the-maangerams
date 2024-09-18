@@ -1,7 +1,7 @@
 import React from 'react';
 import Comp1 from '../components/Comp1';
 import Comp5 from '../components/Comp5';
-import Comp2 from '../components/Comp2';
+// import Comp2 from '../components/Comp2';
 
 const AboutPage = () => {
   const styles = {
@@ -243,7 +243,7 @@ const AboutPage = () => {
       <div className="mt-16 px-4 md:px-8 lg:px-16">
         <Comp1 />
       </div>
-      <Comp2 />
+      {/* <Comp2 /> */}
     </div>
   );
 };

@@ -63,7 +63,7 @@ const Shop = () => {
 
   return (
     <div className="font-sans bg-white mt-16">
-      <section className="relative overflow-hidden bg-[#f0f4ed] py-10 px-4 md:py-16 md:px-10 mt-16">
+      <section className="relative overflow-hidden bg-[#f0f4ed] py-10 px-4 md:py-16 md:px-10 mt-16 ">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-3xl md:text-4xl text-gray-800 mb-2">
             Shop <span className="font-bold text-black">The Maangerams</span>  
@@ -77,9 +77,9 @@ const Shop = () => {
 
       <img src="/images/wave.png" alt="Decorative wave" className="w-full mt-[-90px] relative z-10" />
 
-      <div className="text-center p-4 md:p-8 font-sans">
+      <div className="text-center p-4 md:p-8 font-sans  ">
      
-        <div className="flex flex-wrap justify-center items-center max-w-6xl mx-auto mt-8 gap-4">
+        <div className="flex flex-wrap justify-center items-center max-w-6xl mx-auto mt-8 gap-4 max-sm:mt-20">
           <div className="flex items-center space-x-2">
             <span className="text-sm text-gray-500">CATEGORIES</span>
             <select 

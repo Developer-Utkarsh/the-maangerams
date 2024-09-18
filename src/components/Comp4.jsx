@@ -112,6 +112,8 @@ const Comp4 = () => {
         `}
       </style>
 
+      <h2 className='text-center text-4xl text-zinc-800  font-thin mb-10   '>Exclusive <span className='text-[#4e8734] font-bold'>Sale</span></h2>
+
       <div ref={cardsRef} className="overflow-hidden relative mx-auto" >
         <div 
           className="scrolling-container py-4 gap-0 md:gap-10"

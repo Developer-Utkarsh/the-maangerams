@@ -8,11 +8,7 @@ const ProductCard = ({ product }) => {
     navigate(`/product/${product.id}`, { state: { product } });
   };
 
-  const handleBuyNow = (e) => {
-    e.stopPropagation();
-    console.log(`Buying ${product.name}`);
-  };
-
+ 
   return (
     <div 
       className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl border border-slate-200 hover:border-slate-300 cursor-pointer"
@@ -49,7 +45,10 @@ const ProductCard = ({ product }) => {
         <div className="flex flex-col space-y-2">
           <button 
             className="bg-[#7fba00] text-white font-semibold py-2 px-4 rounded-full hover:bg-[#6ca300] transition duration-300 ease-in-out transform hover:scale-105"
-            onClick={handleBuyNow}
+            onClick={(e) => {
+              e.preventDefault();
+              window.open(product.buyNowLink, '_blank');
+            }}
           >
             Buy Now
           </button>

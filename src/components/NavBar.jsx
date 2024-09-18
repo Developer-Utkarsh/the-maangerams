@@ -43,11 +43,11 @@ const Navbar = () => {
       transition-all duration-300 ease-in-out
     `}>
       <div className="container mx-auto px-6 sm:px-8 md:px-10 py-3 md:py-4 flex justify-between items-center">
-        <Link to="/" className="flex items-center text-center justify-start  gap-0">
-          <img src={logoImage} alt="Logo" className={` ${isHomePage ? (scrolled ? 'md:h-12 h-10' :'h-16 md:h-20 '): 'h-10 md:h-12 '}  `} />
+        <Link to="/" className="flex items-center text-center justify-start  gap-2">
+          <img src={logoImage} alt="Logo" className={`  rounded-full ${isHomePage ? (scrolled ? 'md:h-12 h-10' :'h-16 md:h-16 '): 'h-10 md:h-12 '}  `} />
           <span className={`
               font-medium  text-black mt-0 text-left tracking-tight
-            ${scrolled || !isHomePage ? 'text-sm md:text-base' : 'text-base md:text-xl'}
+            ${scrolled || !isHomePage ? 'text-sm md:text-base text-black' : 'text-base md:text-xl text-white'}
           `}>
             The Maangerams
           </span>
@@ -63,7 +63,7 @@ const Navbar = () => {
 
         <ul className={`
           md:flex md:items-center md:space-x-6
-          ${menuOpen ? 'absolute top-full left-0 right-0 bg-white shadow-md p-4' : 'hidden'}
+          ${menuOpen ? 'absolute top-full left-0 right-0 bg-white  shadow-md p-4' : 'hidden'}
           md:static md:bg-transparent md:shadow-none md:p-0
         `}>
           {['HOME', 'ABOUT', 'SHOP', 'CONTACT'].map((item) => (
@@ -72,7 +72,8 @@ const Navbar = () => {
                 to={item === 'HOME' ? '/' : `/${item.toLowerCase().replace(' ', '-')}`}
                 className={`
                   text-base font-medium tracking-wide
-                  ${location.pathname === (item === 'HOME' ? '/' : `/${item.toLowerCase().replace(' ', '-')}`) ? 'text-green-500' : 'text-gray-700'}
+                  ${location.pathname === (item === 'HOME' ? '/' : `/${item.toLowerCase().replace(' ', '-')}`) ? 'text-green-500' : 
+                    (isHomePage && !scrolled ? 'text-white' : 'text-black')}
                   hover:text-green-500 transition-colors duration-300
                 `}
                 onClick={() => setMenuOpen(false)}

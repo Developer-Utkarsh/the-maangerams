@@ -3,7 +3,7 @@ import React from 'react';
 const Organic  = () => {
   const features = [
     { icon: 'feature-1.png', title: 'fresh from', boldTitle: 'The Maangerams farm' },
-    { icon: 'feature-2.png', title: '100%', boldTitle: 'organic goods' },
+    { icon: 'feature-2.png', title: '100%', boldTitle: 'organic dairy' },
     { icon: 'feature-3.png', title: 'premium', boldTitle: 'quality' },
     { icon: 'feature-4.png', title: '100%', boldTitle: 'natural' },
   ];
@@ -21,9 +21,8 @@ const Organic  = () => {
         </h1>
         <h3 className="text-sm sm:text-base text-[#515153] mb-6">----ABOUT The Maangerams  ----</h3>
         <p className="text-base sm:text-lg text-[#7a7a7a] max-w-3xl mx-auto mb-12 lg:mb-24">
-        At Maangeram  we are dedicated to providing the freshest, highest-quality produce straight from the farm to your table. Our commitment to sustainability and excellence drives us to source only the best fruits and vegetables, ensuring that our customers receive nutritious, flavorful, and naturally grown produce.
-
-        </p>
+At The Maangerams, we are dedicated to providing the freshest, highest-quality dairy products straight from our farm to your table. Our commitment to sustainability and excellence drives us to produce only the best milk, cheese, and yogurt, ensuring that our customers receive nutritious, flavorful, and naturally crafted dairy goods. We complement our dairy offerings with a selection of farm-fresh vegetables and fruits to provide a complete, wholesome experience.
+</p>
 
         <div className="relative">
           {/* Large screens: Single row layout */}

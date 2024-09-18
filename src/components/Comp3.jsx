@@ -32,12 +32,13 @@ const Comp3 = () => {
                 <div className="flex flex-col md:flex-row items-center justify-center mb-8">
                     <div className="md:w-1/2 mb-6 md:mb-0">
                         <h5 className="text-sm tracking-wider text-gray-500 uppercase mb-2">The Maangerams DEAL OF THE DAY</h5>
-                        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-gray-800 mb-4">
-                            organic goods <span className="text-[#4e8734] font-semibold">50% off</span>
-                        </h1>
-                        <p className="text-gray-600 leading-relaxed max-w-lg mx-auto md:mx-0 md:text-left">
-                        Don't miss out on Maangeram's Deal of the Day, where you can enjoy unbeatable discounts on our freshest fruits, vegetables, and organic beverages. Every day, we hand-pick select items from our wide range of over 220+ varieties of produce and 115+ organic juices and teas, offering you great savings on high-quality, nutritious products.
-                        </p>
+                        <h5 className="text-sm tracking-wider text-gray-500 uppercase mb-2">The Maangerams DAIRY DEAL OF THE DAY</h5>
+<h1 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-gray-800 mb-4">
+    fresh dairy <span className="text-[#4e8734] font-semibold">30% off</span>
+</h1>
+<p className="text-gray-600 leading-relaxed max-w-lg mx-auto md:mx-0 md:text-left">
+Don't miss out on The Maangerams' Dairy Deal of the Day, where you can enjoy unbeatable discounts on our freshest milk, cheese, yogurt, and other dairy delights. Every day, we hand-pick select items from our wide range of over 15+ varieties of dairy products, offering you great savings on high-quality, nutritious goods.
+</p>
                     </div>
                     <div className="md:w-1/2 flex justify-center">
                         <img src="/images/deal.png" alt="Organic Tomatoes" className="w-40 sm:w-48 lg:w-56" />

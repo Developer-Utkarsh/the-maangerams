@@ -4,9 +4,9 @@ const Comp1 = () => {
   const [hoverIndex, setHoverIndex] = useState(null);
 
   const products = [
-    { image: '/images/straw.png', title: 'organic fruits', items: '52 items' },
-    { image: '/images/tamatar.png', title: 'fresh vegetables', items: '35 items' },
-    { image: '/images/bun.png', title: 'organic breads', items: '23 items' },
+    { image: '/images/juce.png', title: 'fresh dairy', items: '6 items' },
+    { image: '/images/tamatar.png', title: 'fresh vegetables', items: '4 items' },
+    { image: '/images/straw.png', title: 'organic fruits', items: '5 items' },
   ];
 
   return (
@@ -39,17 +39,17 @@ const Comp1 = () => {
 
       {/* Right Section */}
       <div className="flex-1 w-full text-left sm:text-left mt-8 md:mt-0 md:ml-8 max-w-xl  md:mx-0">
-        <h2 className="text-gray-600 uppercase text-sm tracking-wider mb-2">
-          Fresh from our farm
-        </h2>
-        <h1 className="text-[40px] font-bold mb-[10px] mt-[10px]">
-          <span className="font-normal">220+ </span>
-          <span className="font-bold">fruits, vegetables</span>
-          <span className="font-normal"> &</span> lot more
-        </h1>
-        <p className="text-[#666] text-lg leading-[1.6] mt-4">
-        we proudly offer an incredible selection of over 220+ varieties of fresh fruits and vegetables, ensuring that our customers always have access to the best nature has to offer. From everyday staples to unique and exotic produce, we are committed to providing the highest-quality fruits and vegetables sourced directly from trusted farmers and suppliers.
-        </p>
+      <h2 className="text-gray-600 uppercase text-sm tracking-wider mb-2">
+  Fresh from our dairy farm
+</h2>
+<h1 className="text-[40px] font-bold mb-[10px] mt-[10px]">
+  <span className="font-normal">10+ </span>
+  <span className="font-bold">dairy products</span>
+  <span className="font-normal">, vegetables &</span> fruits
+</h1>
+<p className="text-[#666] text-lg leading-[1.6] mt-4">
+At The Maangerams, we proudly offer an incredible selection of over 10+ varieties of fresh dairy products, along with a wide range of farm-fresh vegetables and fruits. Our commitment to quality ensures that our customers always have access to the best nature has to offer, from creamy yogurts and artisanal cheeses to crisp vegetables and juicy fruits.
+</p>
       </div>
      </div>
   );

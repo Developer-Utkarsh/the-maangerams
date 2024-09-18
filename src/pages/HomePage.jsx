@@ -22,14 +22,14 @@ const HomePage = () => {
             <div style={{ flexGrow: 1, padding: '2px', maxWidth: '100%' }}>
                 <Comp1 />
             </div>
-
+{/* 
             <div style={{ marginTop: '5px', flexGrow: 1, padding: '3px', marginLeft: '3px', marginRight: '3px', maxWidth: '100%' }}>
                 <Comp2 />
-            </div>
+            </div> */}
 
-            <div style={{ marginTop: '5px', flexGrow: 1, padding: '3px', marginLeft: '0px', marginRight: '0px', maxWidth: '100%' }}>
+            {/* <div style={{ marginTop: '5px', flexGrow: 1, padding: '3px', marginLeft: '0px', marginRight: '0px', maxWidth: '100%' }}>
                 <Comp3 />
-            </div>   
+            </div>    */}
             <div style={{ marginTop: '-5px', flexGrow: 1, padding: '3px' ,backgroundColor:'#f9f9f9'}}>
                 <Comp4 />
             </div>
