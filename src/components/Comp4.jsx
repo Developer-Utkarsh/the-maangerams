@@ -90,7 +90,7 @@ const Comp4 = () => {
           .scrolling-container > div {
             flex: 0 0 auto;
           }
-          @media (max-width: 768px) {
+          @media (maxWidth: 768px) {
             @keyframes scrolling-mobile {
               0%, 25% {
                 transform: translateX(0);

@@ -8,7 +8,7 @@ const Comp5 = () => {
       backgroundColor: '#f9f9f9',
       position: 'relative',
       marginTop: '100px',
-      minHeight: '1000px',
+      // minHeight: '1000px',
       padding: '20px',
     },
     section: {
@@ -19,7 +19,7 @@ const Comp5 = () => {
     topLeaves: {
       marginLeft: '-160px',
       marginBottom: '-50px',
-      '@media (max-width: 768px)': {
+      '@media (maxWidth: 768px)': {
         marginLeft: '0',
         textAlign: 'left',
       },
@@ -45,7 +45,7 @@ const Comp5 = () => {
       top: '45px',
       maxWidth: '180px',
       margin: '0 auto',
-      '@media (max-width: 768px)': {
+      '@media (maxWidth: 768px)': {
         top: '25px',
       },
     },
@@ -57,7 +57,7 @@ const Comp5 = () => {
       justifyContent: 'center',
       position: 'relative',
       overflow: 'visible',
-      '@media (max-width: 768px)': {
+      '@media (maxWidth: 768px)': {
         fontSize: '36px',
         flexDirection: 'column',
       },
@@ -93,7 +93,7 @@ const Comp5 = () => {
       width: '300px',
       maxWidth: '100%',
       marginLeft: '-170px',
-      '@media (max-width: 768px)': {
+      '@media (maxWidth: 768px)': {
         marginLeft: '0',
       },
     },
@@ -102,7 +102,7 @@ const Comp5 = () => {
       marginTop: '-190px',
       color: '#333',
       fontStyle: 'italic',
-      '@media (max-width: 768px)': {
+      '@media (maxWidth: 768px)': {
         marginTop: '20px',
       },
     },
@@ -134,13 +134,13 @@ const Comp5 = () => {
         </p>
 
         <div style={styles.signatureSection}>
-          <div>
+          {/* <div>
             <h3 style={styles.ownerName}>Gabriel Johnson</h3>
             <p style={styles.ownerTitle}>The Maangerams Owner</p>
-          </div>
+          </div> */}
           
           <div>
-            <img src="/images/katori.png" alt="Signature" style={styles.signatureImage} />
+            {/* <img src="/images/hero.jpeg" alt="Signature" style={styles.signatureImage} className='rounded-full'/> */}
           </div>
         </div>
 

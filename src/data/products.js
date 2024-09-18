@@ -28,7 +28,7 @@ export const products = [
     imageSrc: "/images/raw-buffalo-milk.png",
     otherImages: [
       "/images/raw-buffalo-milk-1.png",
-      "/images/raw-buffalo-milk-2.jpg",
+      // "/images/raw-buffalo-milk-2.jpg",
     ],
     tags: ["creamy", "nutrient-rich"],
     onSale: true,
@@ -38,13 +38,51 @@ export const products = [
     buyNowLink: "https://wa.link/xudlmv"
   },
   {
+    id: "COWGHEE001",
+    name: "Cow Ghee",
+    price: 0, // Please adjust the price as needed
+    oldPrice: 0, // Please adjust the old price as needed
+    quantity: "500 grams", // Please adjust the quantity as needed
+    description: "Pure and aromatic cow ghee, rich in nutrients and perfect for cooking or as a condiment.",
+    imageSrc: "", // Please ensure this image exists
+    otherImages: [
+      "",
+      "",
+    ],
+    tags: ["pure", "nutritious"],
+    onSale: true,
+    toShowcase: true,
+    category: "Dairy",
+    isNew: false,
+    buyNowLink: "https://wa.link/mxmes9"
+  },
+  {
+    id: "BUFGHEE001",
+    name: "Buffalo Ghee",
+    price: 0, // Please adjust the price as needed
+    oldPrice: 0, // Please adjust the old price as needed
+    quantity: "500 grams", // Please adjust the quantity as needed
+    description: "Rich and flavorful buffalo ghee, perfect for enhancing the taste of your dishes.",
+    imageSrc: "", // Please ensure this image exists
+    otherImages: [
+      "",
+      "",
+    ],
+    tags: ["rich", "flavorful"],
+    onSale: true,
+    toShowcase: false,
+    category: "Dairy",
+    isNew: false,
+    buyNowLink: "https://wa.link/0sv55s"
+  },
+  {
     id: "PAN003",
     name: "Paneer",
     price: 360,
     oldPrice: 400,
     quantity: "One Kilogram",
     description: "Experience the rich taste of tradition with our paneer, made from the freshest milk for unmatched purity and flavor.",
-    imageSrc: "/images/paneer.png",
+    imageSrc: "/images/paneer.jpeg",
     otherImages: [
       "/images/paneer-1.jpeg",
       "/images/paneer-2.jpeg",
@@ -276,42 +314,5 @@ export const products = [
     isNew: false,
     buyNowLink: "https://wa.link/tm0kds"
   },
-  {
-    id: "COWGHEE001",
-    name: "Cow Ghee",
-    price: 0, // Please adjust the price as needed
-    oldPrice: 0, // Please adjust the old price as needed
-    quantity: "500 grams", // Please adjust the quantity as needed
-    description: "Pure and aromatic cow ghee, rich in nutrients and perfect for cooking or as a condiment.",
-    imageSrc: "", // Please ensure this image exists
-    otherImages: [
-      "",
-      "",
-    ],
-    tags: ["pure", "nutritious"],
-    onSale: true,
-    toShowcase: true,
-    category: "Dairy",
-    isNew: false,
-    buyNowLink: "https://wa.link/mxmes9"
-  },
-  {
-    id: "BUFGHEE001",
-    name: "Buffalo Ghee",
-    price: 0, // Please adjust the price as needed
-    oldPrice: 0, // Please adjust the old price as needed
-    quantity: "500 grams", // Please adjust the quantity as needed
-    description: "Rich and flavorful buffalo ghee, perfect for enhancing the taste of your dishes.",
-    imageSrc: "", // Please ensure this image exists
-    otherImages: [
-      "",
-      "",
-    ],
-    tags: ["rich", "flavorful"],
-    onSale: true,
-    toShowcase: false,
-    category: "Dairy",
-    isNew: false,
-    buyNowLink: "https://wa.link/0sv55s"
-  },
+  
 ];

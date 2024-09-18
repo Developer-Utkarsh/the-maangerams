@@ -87,7 +87,7 @@ const ProductDescriptions = () => {
 
           <p className="text-gray-700 mb-6 leading-relaxed">{product.description}</p>
 
-          <div className="flex flex-wrap items-center gap-4 mb-6">
+          {/* <div className="flex flex-wrap items-center gap-4 mb-6">
             <div className="flex items-center border-2 border-gray-300 rounded-full overflow-hidden">
               <button
                 onClick={() => handleQuantityChange(-1)}
@@ -109,7 +109,7 @@ const ProductDescriptions = () => {
               </button>
             </div>
             <p className="text-gray-600">{product.quantity}</p>
-          </div>
+          </div> */}
 
           <div className="border-t border-gray-200 py-4 mb-6">
             <p className="text-gray-600 mb-1"><strong>SKU</strong>: {product.id}</p>

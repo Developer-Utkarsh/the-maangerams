@@ -54,7 +54,7 @@ const Navbar = () => {
         </Link>
 
         <div className="md:hidden">
-          <button onClick={toggleMenu} className="text-gray-600 focus:outline-none">
+          <button onClick={toggleMenu} className={`focus:outline-none ${isHomePage && !scrolled ? 'text-white' : 'text-gray-600'}`}>
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
             </svg>
@@ -73,7 +73,7 @@ const Navbar = () => {
                 className={`
                   text-base font-medium tracking-wide
                   ${location.pathname === (item === 'HOME' ? '/' : `/${item.toLowerCase().replace(' ', '-')}`) ? 'text-green-500' : 
-                    (isHomePage && !scrolled ? 'text-white' : 'text-black')}
+                    (isHomePage && !scrolled ? 'md:text-white text-black' : 'text-black')}
                   hover:text-green-500 transition-colors duration-300
                 `}
                 onClick={() => setMenuOpen(false)}
