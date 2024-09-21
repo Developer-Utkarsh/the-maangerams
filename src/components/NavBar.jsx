@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import logoImage from '/images/logo.png';
+import logoImage from '/images/logo-main.png';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -44,7 +44,7 @@ const Navbar = () => {
     `}>
       <div className="container mx-auto px-6 sm:px-8 md:px-10 py-3 md:py-4 flex justify-between items-center">
         <Link to="/" className="flex items-center text-center justify-start  gap-2">
-          <img src={logoImage} alt="Logo" className={`  rounded-full ${isHomePage ? (scrolled ? 'md:h-12 h-10' :'h-16 md:h-16 '): 'h-10 md:h-12 '}  `} />
+          <img src={logoImage} alt="Logo" className={` p-[2px]  bg-white rounded-full ${isHomePage ? (scrolled ? 'md:h-12 h-10' :'h-10 md:h-12 '): 'h-10 md:h-12 '}  `} />
           <span className={`
               font-medium  text-black mt-0 text-left tracking-tight
             ${scrolled || !isHomePage ? 'text-sm md:text-base text-black' : 'text-base md:text-xl text-white'}

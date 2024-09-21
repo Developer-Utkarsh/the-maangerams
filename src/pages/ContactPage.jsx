@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
+import { Check, RefreshCw } from 'lucide-react';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -7,6 +9,8 @@ const ContactPage = () => {
     phone: '',
     message: ''
   });
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState('');
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -14,8 +18,26 @@ const ContactPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log(formData);
+    setLoading(true);
+    setStatus('Sending');
+
+    emailjs.send('the_maangerams', 'template_maangerams', formData, 'VWSSITKPkcbwIpS7l')
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        setStatus('Sended');
+        setFormData({ name: '', email: '', phone: '', message: '' }); // Reset form
+        setTimeout(() => {
+          setLoading(false);
+          setStatus('');
+        }, 5000);
+      }, (err) => {
+        console.log('FAILED...', err);
+        setStatus('Try Again');
+        setLoading(false);
+        setTimeout(() => {
+          setStatus('');
+        }, 5000);
+      });
   };
 
   return (
@@ -127,16 +149,31 @@ const ContactPage = () => {
             <div className="text-center">
               <button
                 type="submit"
-                className="bg-[#7FBA00] text-white font-bold py-2 px-6 md:py-3 md:px-8 rounded-full hover:bg-green-500 transition duration-300"
+                className={`bg-[#7FBA00] text-white font-bold py-2 px-6 md:py-3 md:px-8 rounded-full hover:bg-green-500 gap-3 transition duration-300 ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
+                disabled={loading}
               >
-                SEND EMAIL
+                {loading ? (
+                  <>
+                    Sending <span className="loader"></span> {/* Add your loader here */}
+                  </>
+                ) : status === 'Sended' ? (
+                  <>
+                    Sended <Check />
+                  </>
+                ) : status === 'Try Again' ? (
+                  <>
+                    Try Again <RefreshCw />
+                  </>
+                ) : (
+                  'SEND'
+                )}
               </button>
             </div>
           </form>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ContactPage
+export default ContactPage;
